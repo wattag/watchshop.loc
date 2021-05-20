@@ -1,0 +1,19 @@
+{
+    "name": "ilya/watchshop.loc",
+    "description": "This is project for my college.",
+    "authors": [
+        {
+            "name": "Ilya Litvinov",
+            "email": "litvinov374@gmail.com"
+        }
+    ],
+    "require": {
+        "gabordemooij/redbean": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "./app",
+            "Core\\": "./core"
+        }
+    }
+}
