@@ -293,7 +293,7 @@ span.simpleCart_total {
 	height: 0;
 	left: 13px;
 	right: 0;
-	top: 36px;
+	top: 15px;
 	background: #73B6E1;
 	overflow: hidden;
 	opacity: 0;
@@ -3067,7 +3067,13 @@ ul.tag-men {
 .product-one > .product-left{
 	margin-bottom: 20px;
 }
-
+.del-item{
+	cursor: pointer;
+}
 #cart table img{
 	height: 50px;
+}
+#old-price > .data-base{
+	font-size: 75%;
+	text-decoration: line-through
 }

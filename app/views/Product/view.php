@@ -62,20 +62,28 @@
                         <h5 class="item_price" id="base-price" data-base="<?=$product->price * $curr['value'];?>">
                             <?=$curr['symbol_left'];?> <?=$product->price * $curr['value'];?>
                             <?php if ($product->old_price): ?>
-                                <small id="old-price" data-old="<?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?>">
+                                <small>
                                     <del>
                                         <?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?>
                                     </del>
                                 </small>
                             <?php endif; ?>
                         </h5>
+                        <h4 style="visibility: hidden" class="item_price" id="old-price" data-base="<?=$product->old_price * $curr['value'];?>">
+                            <?php if ($product->old_price): ?>
+                                <small>
+                                    <del>
+                                        <?=$curr['symbol_left'];?><?=$product->old_price * $curr['value'];?>
+                                    </del>
+                                </small>
+                            <?php endif; ?>
+                        </h4>
                         <p><?=$product->content; ?></p>
                         <?php if($mods):?>
                         <div class="available">
                             <ul>
                                 <li>Color
                                     <select>
-                                        <option>Choose color</option>
                                         <?php foreach ($mods as $mod): ?>
                                             <option data-title="<?=$mod->title;?>" data-price="<?=$mod->price * $curr['value'];?>" value="<?=$mod->id;?>"><?=$mod->title; ?></option>
                                         <?php endforeach;?>

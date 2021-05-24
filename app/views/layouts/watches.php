@@ -39,12 +39,16 @@
             </div>
             <div class="col-md-6 top-header-left">
                 <div class="cart box_1">
-                    <a href="checkout.html">
+                    <a href="cart/show" onclick="getCart(); return false">
                         <div class="total">
-                            <span class="simpleCart_total"></span></div>
-                        <img src="images/cart-1.png" alt="" />
+                            <img src="images/cart-1.png" alt=""/>
+                            <?php if (!empty($_SESSION['cart'])):?>
+                                <span class="simpleCart_total"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'];?></span>
+                            <?php else: ?>
+                                <span class="simpleCart_total">Empty Cart</span>
+                            <?php endif;?>
+                        </div>
                     </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                     <div class="clearfix"> </div>
                 </div>
             </div>
@@ -127,7 +131,7 @@
                     <span>Lorem ipsum dolor,</span>
                     Glasglow Dr 40 Fe 72.</h4>
                 <h5>+955 123 4567</h5>
-                <p><a href="mailto:example@email.com">contact@example.com</a></p>
+                <p><a href="mailto:example@email.com">litvinov374@gmail.com</a></p>
             </div>
             <div class="clearfix"></div>
         </div>

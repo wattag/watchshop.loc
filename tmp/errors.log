@@ -1428,3 +1428,31 @@
 ==========================
 [2021-05-24 10:44:27] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
 ==========================
+[2021-05-24 11:00:08] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-24 11:56:36] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-24 14:40:00] Текст ошибки: Контроллер App\controllers\CategoryController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-24 14:40:26] Текст ошибки: Контроллер App\controllers\CategoryController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-24 14:40:31] Текст ошибки: Контроллер App\controllers\CategoryController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-24 14:40:42] Текст ошибки: Контроллер App\controllers\CategoryController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-24 16:49:18] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 14 
+==========================
+[2021-05-24 16:50:37] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 13 
+==========================
+[2021-05-24 16:50:38] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 13 
+==========================
+[2021-05-24 16:50:44] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 13 
+==========================
+[2021-05-24 16:50:52] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 14 
+==========================
+[2021-05-24 16:50:53] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 14 
+==========================
+[2021-05-24 16:50:53] Текст ошибки: Class 'R' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CurrencyController.php | Строка: 14 
+==========================
+[2021-05-24 17:27:16] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
