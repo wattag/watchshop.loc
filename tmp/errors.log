@@ -1424,3 +1424,7 @@
 ==========================
 [2021-05-24 10:13:58] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Cart/add.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
 ==========================
+[2021-05-24 10:38:32] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-24 10:44:27] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
