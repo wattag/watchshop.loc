@@ -27,7 +27,6 @@ class Pagination
         $this->countPages = $this->getCountPages();
         $this->currentPage = $this->getCurrentPage($page);
         $this->uri = $this->getParams();
-        var_dump($this->uri);
     }
 
     public function getHTML()
