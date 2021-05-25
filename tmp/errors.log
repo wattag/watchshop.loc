@@ -1470,3 +1470,53 @@
 ==========================
 [2021-05-25 13:48:08] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
 ==========================
+[2021-05-25 17:23:27] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:24:15] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:24:16] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:24:20] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:24:45] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:24:46] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:25:00] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:25:01] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:25:17] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:25:18] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:25:21] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:43] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:43] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:44] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:44] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:44] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:27:50] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:28:19] Текст ошибки: Identifier does not conform to RedBeanPHP security policies. | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\QueryWriter\AQueryWriter.php | Строка: 839 
+==========================
+[2021-05-25 17:30:14] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'watchshop.products' doesn't exist | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-25 17:30:22] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:39:05] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:39:07] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/Category/view.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-25 17:46:32] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CategoryController.php | Строка: 15 
+==========================
+[2021-05-25 17:47:29] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\CategoryController.php | Строка: 15 
+==========================
+[2021-05-25 17:53:22] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
