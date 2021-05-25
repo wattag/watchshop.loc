@@ -78,8 +78,12 @@
             </div>
             <div class="col-md-3 header-right">
                 <div class="search-bar">
-                    <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                    <input type="submit" value="">
+                    <form action="search" method="get" autocomplete="off">
+                        <input type="text" class="typeahead" id="typeahead" name="s">
+                        <input type="submit" value="">
+                    </form>
+                    <!-- <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                    <input type="submit" value=""> -->
                 </div>
             </div>
             <div class="clearfix"> </div>
@@ -127,10 +131,8 @@
             </div>
             <div class="col-md-3 infor-left">
                 <h3>Store Information</h3>
-                <h4>The company name,
-                    <span>Lorem ipsum dolor,</span>
-                    Glasglow Dr 40 Fe 72.</h4>
-                <h5>+955 123 4567</h5>
+                <h4></h4>
+                <h5></h5>
                 <p><a href="mailto:example@email.com">litvinov374@gmail.com</a></p>
             </div>
             <div class="clearfix"></div>
@@ -189,6 +191,7 @@
 </script>
 <script src="/public/js/jquery-1.11.0.min.js"></script>
 <script src="/public/js/bootstrap.min.js"></script>
+<script src="/public/js/typeahead.bundle.js"></script>
 
 <!-- FlexSlider -->
 <script src="../public/js/imagezoom.js"></script>
