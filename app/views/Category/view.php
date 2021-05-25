@@ -3,8 +3,7 @@
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li class="active"><a href="<?=PATH;?>">Home</a></li>
-                <li>Category</li>
+                <?=$breadcrumbs;?>
             </ol>
         </div>
     </div>
@@ -45,6 +44,13 @@
                             </div>
                         <?php endforeach;?>
                         <div class="clearfix"></div>
+                        <div class="text-center">
+                            <p>(<?=count($products)?> product(s) out of <?=$total;?>)</p>
+                            <?php if ($pagination->countPages > 1):?>
+                                <?=$pagination;?>
+                            <?php endif;?>
+
+                        </div>
                     </div>
                 <?php else: ?>
                     <h3> Sorry :( There are no products in this category</h3>
