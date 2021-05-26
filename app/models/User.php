@@ -46,6 +46,7 @@ class User extends AppModel
         }
         return true;
     }
+
     public function login($isAdmin = false)
     {
         $login = !empty(trim($_POST['login'])) ? trim($_POST['login']) : null;
@@ -66,5 +67,15 @@ class User extends AppModel
             }
         }
         return false;
+    }
+
+    public static function checkAuth()
+    {
+        return isset($_SESSION['user']);
+    }
+
+    public static function isAdmin()
+    {
+        return (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin');
     }
 }

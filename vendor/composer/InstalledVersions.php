@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd2007bfde8abd9c8bf0a9804bac7daa3cf4e37c0',
+    'reference' => '4512ad94dbe99757b2200c2ae15ce019ca0993c5',
     'name' => 'ilya/watchshop.loc',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd2007bfde8abd9c8bf0a9804bac7daa3cf4e37c0',
+      'reference' => '4512ad94dbe99757b2200c2ae15ce019ca0993c5',
     ),
     'vlucas/valitron' => 
     array (

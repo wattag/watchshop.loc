@@ -96,7 +96,6 @@
     </div>
 </div>
 <!--bottom-header-->
-
 <div class="content">
     <div class="container">
       <div class="row">

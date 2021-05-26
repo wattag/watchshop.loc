@@ -38,3 +38,7 @@
 ==========================
 [2021-05-26 14:51:59] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'wattag' for key 'login' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
 ==========================
+[2021-05-26 17:01:41] Текст ошибки: syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\views\Cart\view.php | Строка: 59 
+==========================
+[2021-05-26 18:02:16] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test' for key 'address' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
