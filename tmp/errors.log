@@ -2,3 +2,39 @@
 ==========================
 [2021-05-26 10:35:17] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
 ==========================
+[2021-05-26 10:38:09] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-26 10:38:12] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-26 10:44:51] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-26 12:40:40] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-26 12:50:04] Текст ошибки: Контроллер App\controllers\UserController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-26 12:55:36] Текст ошибки: Контроллер App\controllers\UserController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
+[2021-05-26 13:14:13] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-05-26 14:28:45] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'login' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:33:12] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'login' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:33:21] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'login' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:33:39] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'login' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:33:40] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'login' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:35:30] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:35:32] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:35:48] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:36:38] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'email' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:37:02] Текст ошибки: SQLSTATE[HY000]: General error: 1364 Field 'address' doesn't have a default value | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-26 14:51:59] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'wattag' for key 'login' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================

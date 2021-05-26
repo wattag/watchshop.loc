@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '274b178d6368d7c10a75b7853baedd597f5f1412',
+    'reference' => 'd2007bfde8abd9c8bf0a9804bac7daa3cf4e37c0',
     'name' => 'ilya/watchshop.loc',
   ),
   'versions' => 
@@ -28,7 +28,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '274b178d6368d7c10a75b7853baedd597f5f1412',
+      'reference' => 'd2007bfde8abd9c8bf0a9804bac7daa3cf4e37c0',
+    ),
+    'vlucas/valitron' => 
+    array (
+      'pretty_version' => 'v1.4.9',
+      'version' => '1.4.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '81515dcc951e1f636a1a18ece2f4154dfa123438',
     ),
   ),
 );
