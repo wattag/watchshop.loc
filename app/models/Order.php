@@ -46,7 +46,7 @@ class Order extends AppModel
             ->setBody($body, 'text/html')
             ;
 
-        $adminMessage = (new Swift_Message("Заказ №{$order_id} принят"))
+        $adminMessage = (new Swift_Message("Заказ №{$order_id} составлен"))
             ->setFrom([App::$app->getProperty('smtp_login') => 'Luxury Watches Shop'])
             ->setTo(App::$app->getProperty('admin_email'))
             ->setBody($body, 'text/html')

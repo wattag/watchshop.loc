@@ -202,6 +202,8 @@
 </div>
 <!-- modal-window-end-->
 
+<div class="preloader"><img src="images/ring.png" alt=""></div>
+
 <!--footer-end-->
 <?php $curr = \Core\App::$app->getProperty('currency');?>
 

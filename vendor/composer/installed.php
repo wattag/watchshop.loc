@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '4512ad94dbe99757b2200c2ae15ce019ca0993c5',
+    'reference' => 'cbe7ecd3eb54d7d90e93067febcdf1b3421842a2',
     'name' => 'ilya/watchshop.loc',
   ),
   'versions' => 
@@ -28,7 +28,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '4512ad94dbe99757b2200c2ae15ce019ca0993c5',
+      'reference' => 'cbe7ecd3eb54d7d90e93067febcdf1b3421842a2',
     ),
     'vlucas/valitron' => 
     array (
