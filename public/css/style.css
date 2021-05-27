@@ -3234,15 +3234,16 @@ form .has-error .form-control{
 	z-index: 9999;
 	background-color: #fefefe;
 	opacity: .5;
+	display: none;
 }
 
 .preloader img {
 	animation: 1s linear 0s normal none infinite running rot;
 	-webkit-animation: 1s linear 0s normal none infinite running rot;
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	position: relative;
 	left: 50%;
-	top: 50vh;
+	top: 50%;
 	margin: -100px 0 0 -100px;
 }
