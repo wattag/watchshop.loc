@@ -3,6 +3,7 @@
 <head>
     <base href="/">
     <?= $this->getMeta(); ?>
+    <link rel="shortcut icon" href="images/main_icon.png" type="image/png"/>
     <link href="/public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/public/megamenu/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/public/megamenu/css/style.css" rel="stylesheet" type="text/css" media="all" />
