@@ -766,3 +766,11 @@
 ==========================
 [2021-05-29 13:54:38] Текст ошибки: Контроллер App\controllers\admin\OrderController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
 ==========================
+[2021-05-29 13:56:20] Текст ошибки: Метод App\controllers\admin\OrderController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-05-29 14:25:09] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`id`, `order`.`user_id`, `order`.`status`, `order`.`date`, `order`.`update_at`,' at line 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-29 14:43:11] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test address' for key 'address' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-29 14:48:56] Текст ошибки: Метод App\controllers\admin\OrderController::viewAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
