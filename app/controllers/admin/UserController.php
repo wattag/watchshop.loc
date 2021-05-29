@@ -11,9 +11,7 @@ class UserController extends AppController
     {
         if (!empty($_POST)){
             $user = new User();
-            if ($user->login(true)){
-                $_SESSION['success'] = 'Администратор успешно авторизован';
-            }else{
+            if (!$user->login(true)){
                 $_SESSION['error'] = 'Логин или пароль введены неверно';
             }
             if (User::isAdmin()){
