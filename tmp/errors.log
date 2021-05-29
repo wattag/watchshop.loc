@@ -776,3 +776,5 @@
 ==========================
 [2021-05-29 15:07:57] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order.*' in 'field list' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
 ==========================
+[2021-05-29 16:33:11] Текст ошибки: Метод App\controllers\admin\OrderController::deleteAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================

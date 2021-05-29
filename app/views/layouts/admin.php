@@ -19,6 +19,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/public/adminlte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/public/adminlte/my.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -338,6 +339,17 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+        <?php if (isset($_SESSION['error'])): ?>
+            <div class="alert alert-danger">
+                <?php echo $_SESSION['error']; unset($_SESSION['error']); ?>
+            </div>
+        <?php endif;?>
+
+        <?php if (isset($_SESSION['success'])): ?>
+            <div class="alert alert-success">
+                <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+            </div>
+        <?php endif;?>
         <?=$content;?>
     </div>
     <!-- /.content-wrapper -->
@@ -549,6 +561,7 @@
 <script src="/public/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/public/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/public/adminlte/dist/js/adminlte.min.js"></script>
+<script src="/public/adminlte/my.js"></script>
 <?php
 $logs = \RedBeanPHP\R::getDatabaseAdapter()
     ->getDatabase()
