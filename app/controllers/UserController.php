@@ -17,15 +17,17 @@ class UserController extends AppController
             if (!$user->validate($data) || !$user->checkUnique()){
                 $user->getErrors();
                 $_SESSION['form_data'] = $data;
+                redirect();
             }else{
                 $user->attributes['password'] = password_hash($user->attributes['password'], PASSWORD_DEFAULT);
                 if ($user->save('user')){
                     $_SESSION['success'] = 'Пользователь успешно зарегестрирован';
+                    redirect(PATH . '/user/login');
                 }else{
                     $_SESSION['error'] = 'Что-то пошло не так..';
+                    redirect();
                 }
             }
-            redirect();
         }
         $this->setMeta('Registration');
     }
