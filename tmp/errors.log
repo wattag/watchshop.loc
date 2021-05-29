@@ -762,3 +762,7 @@
 ==========================
 [2021-05-29 12:24:50] Текст ошибки: Call to a member function getDatabase() on null | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\views\layouts\admin.php | Строка: 572 
 ==========================
+[2021-05-29 12:37:54] Текст ошибки: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'watchshop.products' doesn't exist | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-29 13:54:38] Текст ошибки: Контроллер App\controllers\admin\OrderController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
