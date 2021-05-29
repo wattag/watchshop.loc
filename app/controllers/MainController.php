@@ -9,7 +9,7 @@ use RedBeanPHP\R;
 
 class MainController extends AppController
 {
-    public  function indexAction()
+    public function indexAction()
     {
         $brands = R::find('brand','LIMIT 3');
         $hits = R::find('product',"hit = '1' AND status = '1' LIMIT 8");
