@@ -21,5 +21,6 @@ class UserController extends AppController
             }
         }
         $this->layout = 'login';
+        $this->setMeta('Авторизация');
     }
 }

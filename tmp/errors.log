@@ -798,3 +798,15 @@
 ==========================
 [2021-05-30 15:26:23] Текст ошибки: Контроллер App\controllers\admin\CacheController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
 ==========================
+[2021-05-30 15:50:27] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-30 15:53:54] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-30 15:55:27] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-30 15:57:53] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-30 15:58:34] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-05-30 16:07:05] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
