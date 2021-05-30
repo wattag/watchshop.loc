@@ -810,3 +810,7 @@
 ==========================
 [2021-05-30 16:07:05] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Cache/delete.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
 ==========================
+[2021-05-30 18:39:28] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.name' in 'field list' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-05-30 18:48:13] Текст ошибки: Метод App\controllers\admin\UserController::addAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
