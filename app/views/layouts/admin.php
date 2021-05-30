@@ -320,8 +320,8 @@
                 <li class="treeview">
                     <a href="#"><i class="fa fa-cubes"></i> <span>Товары</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
                     <ul class="treeview-menu">
-                        <li><a href="<?= ADMIN ?>/category">Список товаров</a></li>
-                        <li><a href="<?= ADMIN ?>/category/add">Добавить товар</a></li>
+                        <li><a href="<?= ADMIN ?>/product">Список товаров</a></li>
+                        <li><a href="<?= ADMIN ?>/product/add">Добавить товар</a></li>
                     </ul>
                 </li>
                 <li><a href="<?=ADMIN ?>/cache"><i class="fa fa-database"></i> <span>Кэширование</span></a></li>

@@ -1,4 +1,4 @@
-a:2:{s:4:"data";s:1317:"<li>
+a:2:{s:4:"data";s:1204:"<li>
     <a href="category/men">Men</a>
             <ul>
             <li>
@@ -54,10 +54,5 @@ a:2:{s:4:"data";s:1317:"<li>
     </li>
 <li>
     <a href="category/kids">Kids</a>
-            <ul>
-            <li>
-    <a href="category/electronnie">Electronic</a>
     </li>
-        </ul>
-    </li>
-";s:8:"end_time";i:1622367629;}
+";s:8:"end_time";i:1622371551;}
