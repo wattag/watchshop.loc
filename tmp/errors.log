@@ -796,3 +796,5 @@
 ==========================
 [2021-05-30 12:54:01] Текст ошибки: Метод App\controllers\admin\CategoryController::addAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
 ==========================
+[2021-05-30 15:26:23] Текст ошибки: Контроллер App\controllers\admin\CacheController не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 43 
+==========================
