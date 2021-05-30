@@ -49,7 +49,7 @@
                 <div class="icon">
                     <i class="ion ion-person-add"></i>
                 </div>
-                <a href="#" class="small-box-footer">Все пользователи <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?=ADMIN;?>/user" class="small-box-footer">Все пользователи <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
         <!-- ./col -->
@@ -63,7 +63,7 @@
                 <div class="icon">
                     <i class="ion ion-checkmark"></i>
                 </div>
-                <a href="#" class="small-box-footer">Все категории <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?=ADMIN;?>/category" class="small-box-footer">Все категории <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
         <!-- ./col -->

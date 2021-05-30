@@ -778,3 +778,7 @@
 ==========================
 [2021-05-29 16:33:11] Текст ошибки: Метод App\controllers\admin\OrderController::deleteAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
 ==========================
+[2021-05-30 11:48:48] Текст ошибки: Метод App\controllers\admin\CategoryController::addAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-05-30 11:48:48] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
