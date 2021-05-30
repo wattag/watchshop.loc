@@ -64,8 +64,8 @@ class Menu
                 $attrs .= " $key='$value' ";
             }
         }
-        echo $this->prepend;
         echo "<{$this->container} class='{$this->class}' $attrs >";
+        echo $this->prepend;
         echo $this->menuHTML;
         echo "</{$this->container}>";
     }

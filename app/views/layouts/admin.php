@@ -560,6 +560,7 @@
 
 <script src="/public/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/public/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/public/js/validator.js"></script>
 <script src="/public/adminlte/dist/js/adminlte.min.js"></script>
 <script src="/public/adminlte/my.js"></script>
 <?php
