@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 27 2021 г., 17:33
+-- Время создания: Май 31 2021 г., 20:35
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -62,22 +62,32 @@ INSERT INTO `attribute_product` (`attr_id`, `product_id`) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
+(1, 18),
+(1, 19),
 (2, 4),
 (5, 1),
 (5, 2),
 (5, 3),
 (5, 4),
+(5, 18),
+(6, 19),
 (8, 1),
 (8, 2),
 (8, 3),
 (8, 4),
+(8, 18),
+(9, 19),
 (12, 1),
 (12, 2),
 (12, 3),
 (12, 4),
+(12, 18),
+(14, 19),
 (18, 1),
 (18, 2),
 (18, 4),
+(18, 18),
+(18, 19),
 (19, 3);
 
 -- --------------------------------------------------------
@@ -136,12 +146,12 @@ CREATE TABLE `brand` (
 --
 
 INSERT INTO `brand` (`id`, `title`, `alias`, `img`, `description`) VALUES
-(1, 'Casio', 'casio', 'abt-1.jpg', 'Japanese giant Casio is one of the leaders in the global consumer electronics market.'),
+(1, 'Rolex', 'rolex', 'abt-1.jpg', 'Часы Rolex прошли испытание временем благодаря мастерству часовщиков, прилагающих все свои знания и умения для создания каждой модели Rolex.'),
 (2, 'Citizen', 'citizen', 'abt-2.jpg', 'Citizen is the world\'s largest watch manufacturer. Currently, the company is engaged in the latest developments in the field of Eco-Drive technology.'),
 (3, 'Royal London', 'royal-london', 'abt-3.jpg', 'Royal London is a young watch brand originally from the United Kingdom. The \"founding father\" of the brand is Condor Group Ltd.'),
 (4, 'Seiko', 'seiko', 'brand_no_image.jpg', 'Seiko watches'),
 (5, 'Diesel', 'diesel', 'brand_no_image.jpg', 'Diesel watches'),
-(7, 'Rolex', 'rolex', 'abt-1.jpg', 'Часы Rolex прошли испытание временем благодаря мастерству часовщиков, дизайнеров и инженеров, преданных своему делу и прилагающих все свои знания и умения для создания каждой часовой модели Rolex.');
+(7, 'Casio', 'casio', 'abt-1.jpg', 'Часы Rolex прошли испытание временем благодаря мастерству часовщиков, дизайнеров и инженеров, преданных своему делу и прилагающих все свои знания и умения для создания каждой часовой модели Rolex.');
 
 -- --------------------------------------------------------
 
@@ -176,7 +186,8 @@ INSERT INTO `category` (`id`, `title`, `alias`, `parent_id`, `keywords`, `descri
 (11, 'Electronic', 'elektronnye-11', 2, 'Electronic', 'Electronic'),
 (12, 'Mechanical', 'mechanical-12', 2, 'Mechanical', 'Mechanical'),
 (13, 'Adriatica', 'adriatica', 11, 'Adriatica', 'Adriatica'),
-(14, 'Anne Klein', 'anne-klein', 12, 'Anne Klein', 'Anne Klein');
+(14, 'Anne Klein', 'anne-klein', 12, 'Anne Klein', 'Anne Klein'),
+(16, 'Rolex', 'rolex', 4, 'Rolex', 'rolex watches');
 
 -- --------------------------------------------------------
 
@@ -270,7 +281,7 @@ CREATE TABLE `order` (
 --
 
 INSERT INTO `order` (`id`, `user_id`, `status`, `date`, `update_at`, `currency`, `note`) VALUES
-(4, 10, '0', '2021-05-26 17:36:33', NULL, 'USD', '');
+(5, 19, '1', '2021-05-29 11:45:57', '2021-05-29 12:59:25', 'RUB', '');
 
 -- --------------------------------------------------------
 
@@ -292,9 +303,7 @@ CREATE TABLE `order_product` (
 --
 
 INSERT INTO `order_product` (`id`, `order_id`, `product_id`, `qty`, `title`, `price`) VALUES
-(4, 4, 1, 1, 'Casio MRP-700-1AVEF', 300),
-(5, 4, 8, 1, 'Casio Q56J302Y', 35),
-(6, 4, 1, 1, 'Casio MRP-700-1AVEF (Red)', 310);
+(7, 5, 3, 1, 'Casio GA-1000-1AER', 29600);
 
 -- --------------------------------------------------------
 
@@ -305,7 +314,6 @@ INSERT INTO `order_product` (`id`, `order_id`, `product_id`, `qty`, `title`, `pr
 CREATE TABLE `product` (
   `id` int(10) UNSIGNED NOT NULL,
   `category_id` int(10) UNSIGNED NOT NULL,
-  `brand_id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) CHARACTER SET utf8 NOT NULL,
   `alias` varchar(255) CHARACTER SET utf8 NOT NULL,
   `content` text CHARACTER SET utf8 DEFAULT NULL,
@@ -322,15 +330,22 @@ CREATE TABLE `product` (
 -- Дамп данных таблицы `product`
 --
 
-INSERT INTO `product` (`id`, `category_id`, `brand_id`, `title`, `alias`, `content`, `price`, `old_price`, `status`, `keywords`, `description`, `img`, `hit`) VALUES
-(1, 6, 1, 'Casio MRP-700-1AVEF', 'casio-mrp-700-1avef', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 300, 350, '1', NULL, 'display of information about the tides, hourly alarm, repeat alarm; CR2025 battery, battery life of 10 years', 'p-1.png', '1'),
-(2, 6, 1, 'Casio MQ-24-7BUL', 'casio-mq-24-7bul', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 70, 140, '1', NULL, NULL, 'p-2.png', '1'),
-(3, 6, 1, 'Casio GA-1000-1AER', 'casio-ga-1000-1aer', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 400, 470, '1', NULL, NULL, 'p-3.png', '1'),
-(4, 6, 1, 'Casio JP1010-00E', 'casio-jp1010-00e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 400, 600, '1', NULL, NULL, 'p-4.png', '1'),
-(5, 7, 2, 'Citizen BJ2111-08E', 'citizen-bj2111-08e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 500, 0, '1', NULL, NULL, 'p-5.png', '1'),
-(6, 7, 2, 'Citizen AT0696-59E', 'citizen-at0696-59e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 350, 0, '1', NULL, NULL, 'p-6.png', '1'),
-(7, 8, 3, 'Royal London 41040-01', 'royal-london-41040-01', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 90, 0, '1', NULL, NULL, 'p-8.png', '1'),
-(8, 8, 3, 'Royal London Q56J302Y', 'royal-london-q-56-j30-2y', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 35, 0, '1', NULL, NULL, 'p-7.png', '1');
+INSERT INTO `product` (`id`, `category_id`, `title`, `alias`, `content`, `price`, `old_price`, `status`, `keywords`, `description`, `img`, `hit`) VALUES
+(1, 6, 'Casio MRP-700-1AVEF', 'casio-mrp-700-1avef', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 300, 350, '1', NULL, 'display of information about the tides, hourly alarm, repeat alarm; CR2025 battery, battery life of 10 years', 'p-1.png', '1'),
+(2, 6, 'Casio MQ-24-7BUL', 'casio-mq-24-7bul', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 70, 140, '1', NULL, NULL, 'p-2.png', '1'),
+(3, 6, 'Casio GA-1000-1AER', 'casio-ga-1000-1aer', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 400, 470, '1', NULL, NULL, 'p-3.png', '1'),
+(4, 6, 'Casio JP1010-00E', 'casio-jp1010-00e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 400, 600, '1', NULL, NULL, 'p-4.png', '1'),
+(5, 7, 'Citizen BJ2111-08E', 'citizen-bj2111-08e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 500, 0, '1', NULL, NULL, 'p-5.png', '1'),
+(6, 7, 'Citizen AT0696-59E', 'citizen-at0696-59e', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 350, 0, '1', NULL, NULL, 'p-6.png', '1'),
+(7, 8, 'Royal London 41040-01', 'royal-london-41040-01', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 90, 0, '1', NULL, NULL, 'p-8.png', '1'),
+(8, 8, 'Royal London Q56J302Y', 'royal-london-q-56-j30-2y', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.', 35, 0, '1', NULL, NULL, 'p-7.png', '1'),
+(13, 4, 'Тестовая товар 1', 'testovaya-tovar-1', '<p><strong>Тестовая товар 1</strong></p>\r\n', 350, 555, '1', 'Тестовая товар 1', 'Тестовая товар 1', 'product_no_image.jpg', '0'),
+(14, 1, 'Тестовый товар 1', 'testovyy-tovar-1', '<p><img alt=\"\" src=\"/public/upload/images/1/6dNQCVfQTlU.jpg\" style=\"float:left; height:818px; width:1080px\" />asdasdasdasd</p>\r\n', 350, 555, '1', 'Тестовый товар 1', 'Тестовый товар 1', 'product_no_image.jpg', '1'),
+(15, 4, 'Тестовый товар 2', 'testovyy-tovar-2', '', 350, 555, '1', 'Тестовый товар 2', 'Тестовый товар 2', 'product_no_image.jpg', '1'),
+(16, 4, 'Тестовый товар 2', 'testovyy-tovar-2-16', '', 350, 555, '1', 'Тестовый товар 2', 'Тестовый товар 2', 'product_no_image.jpg', '1'),
+(17, 4, 'Тестовый товар 2', 'testovyy-tovar-2-17', '', 350, 555, '1', 'Тестовый товар 2', 'Тестовый товар 2', 'product_no_image.jpg', '1'),
+(18, 4, 'Тестовый товар 2', 'testovyy-tovar-2-18', '', 350, 555, '1', 'Тестовый товар 2', 'Тестовый товар 2', 'product_no_image.jpg', '1'),
+(19, 4, 'Тестовый товар 3', 'testovyy-tovar-3', '', 350, 11111, '1', 'Тестовый товар 3', 'Тестовый товар 3', 'product_no_image.jpg', '0');
 
 -- --------------------------------------------------------
 
@@ -354,7 +369,10 @@ INSERT INTO `related_product` (`product_id`, `related_id`) VALUES
 (2, 8),
 (5, 1),
 (5, 7),
-(5, 8);
+(5, 8),
+(19, 2),
+(19, 4),
+(19, 6);
 
 -- --------------------------------------------------------
 
@@ -377,12 +395,20 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `login`, `password`, `email`, `name`, `address`, `role`) VALUES
-(5, 'test', 'Qwe1123456', 'test@gmail.com', 'test name', 'test address', 'user'),
 (6, 'wattag', '$2y$10$puHiNOwU5/13MF1KE8.Z0ekvUV1O2kQWWJWdbbe20N9iVZOQoWY5q', 'asdas@gmail.com', 'Ilya', 'test', 'user'),
 (8, 'user1', '$2y$10$dBSPNTecgwE.07YZlw5dneJ7siJkqxP8SDJlNeXx7mmEuZoEIhZau', 'test4@gmail.com', 'Anton', '121321', 'user'),
 (9, 'mondew', '$2y$10$bW6vrSu.HcnGBxpOub8kwuHHNHlRWuJs.QaVxffimEZBEGOVSP1em', 'john12@gmail.com', 'John', 'Amerika', 'user'),
 (10, 'root', '$2y$10$VYNBb5nnQbfdQvn/Xdnrge5OtgUkuB8MPxrHVfOZaRko7c09TH/Ym', 'root@gmail.com', 'Ilya', 'test root address', 'user'),
-(12, 'test1', '$2y$10$AIIAHqaPgezp48zPeVVdb.iyqWD73PqjgqQypkBbe3mFtdBzGzF6i', 'testtest@gmail.com', 'test test', 'testtest', 'user');
+(12, 'test1', '$2y$10$AIIAHqaPgezp48zPeVVdb.iyqWD73PqjgqQypkBbe3mFtdBzGzF6i', 'testtest@gmail.com', 'test test', 'testtest', 'user'),
+(13, 'Tatyana', '$2y$10$Rk/TtmnrUt8aw4LNabgH..eLZErAkuo3E.g1AM/2BCvQe6yRrfooi', 'asda5s@gmail.com', 'Ttt', 'asdas33', 'user'),
+(14, 'asdd', '$2y$10$iCd4JkhlDpTIeF2kldILrur/BZzxj2GJRqzNtpRMvnsMwTwzFEM1m', 'aasff@gmail.com', 'test test test', 'asdasdasds', 'user'),
+(15, 'test12', '$2y$10$K90VPMWVZZgflsrWQOrgG..I2Y.ULoLV6bYCy5XY822AJo0qUI5Xu', 'asdasd@gmail.com', 'asdasdsa', 'gfhgfhf', 'user'),
+(16, 'admin', '$2y$10$uHwnijxkj9saDjOc6QaRCOqmWbwS3MlCQ.JuFKw8wljbaVsM4tt.S', 'admin@gmail.com', 'Ilya', 'Russia', 'admin'),
+(18, 'Jhonny', '$2y$10$sf3KmBAv3J1Ez07VVHTeVenxTflibW0DNNJM6nmw31bSwkVPnQQg.', 'Jhonn@gmail.com', 'Jhonn', 'test addresss', 'user'),
+(19, 'MrMangust', '$2y$10$CEO9AVXQm70cnvIbCi/souSJOOC9iDpBJzHqit9eYziEseurMH4FS', 'mangust@gmail.com', 'Alex', 'Pr-t Sozidatelei 54, 210', 'user'),
+(20, 'wattag1', '$2y$10$OVV2gR6dMhIP/SltrZFqBOULzYLOMsHKG.rLBBPlGWFZs.hlAECmG', 'asdaaaas@gmail.com', 'Wattag', 'testaaaa', 'user'),
+(21, 'wattag2', '$2y$10$Mx6Lp6ycE1TmAmN9GxM0tOECOMCrlO.Ie8PajVaDpMe.KCj9BGodS', 'Antonio@gmail.com', 'Antonio', 'asdasaaa', 'user'),
+(22, 'wattag3', '$2y$10$3L0TMLCELbpRsrLe2fCH0ekbEiLK3cW2hvFrZEQo06waV56hWpU06', 'wattag3@gmail.com', 'wattag3', 'wattag3', 'user');
 
 --
 -- Индексы сохранённых таблиц
@@ -445,21 +471,23 @@ ALTER TABLE `modification`
 -- Индексы таблицы `order`
 --
 ALTER TABLE `order`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Индексы таблицы `order_product`
 --
 ALTER TABLE `order_product`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `product_id` (`product_id`),
+  ADD KEY `order_product_ibfk_1` (`order_id`);
 
 --
 -- Индексы таблицы `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `category_id` (`category_id`),
-  ADD KEY `brand_id` (`brand_id`);
+  ADD KEY `category_id` (`category_id`);
 
 --
 -- Индексы таблицы `related_product`
@@ -502,7 +530,7 @@ ALTER TABLE `brand`
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT для таблицы `currency`
@@ -526,25 +554,25 @@ ALTER TABLE `modification`
 -- AUTO_INCREMENT для таблицы `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `order_product`
 --
 ALTER TABLE `order_product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
@@ -576,11 +604,23 @@ ALTER TABLE `modification`
   ADD CONSTRAINT `modification_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
 
 --
+-- Ограничения внешнего ключа таблицы `order`
+--
+ALTER TABLE `order`
+  ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `order_product`
+--
+ALTER TABLE `order_product`
+  ADD CONSTRAINT `order_product_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `order` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `order_product_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`);
+
+--
 -- Ограничения внешнего ключа таблицы `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`),
-  ADD CONSTRAINT `product_ibfk_2` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`);
+  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
