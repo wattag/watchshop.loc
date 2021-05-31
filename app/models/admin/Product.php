@@ -5,6 +5,7 @@ namespace App\models\admin;
 
 
 use App\models\AppModel;
+use RedBeanPHP\R;
 
 class Product extends AppModel
 {
@@ -30,4 +31,66 @@ class Product extends AppModel
             ['category_id']
         ]
     ];
+
+    public function editRelatedProduct($id, $data)
+    {
+        $related_product = R::getCol('SELECT related_id FROM related_product WHERE product_id = ?', [$id]);
+
+        if (empty($data['related']) && !empty($related_product)){
+            R::exec("DELETE FROM related_product WHERE product_id ?",[$id]);
+            return;
+        }
+        if (empty($related_product) && !empty($data['related'])){
+            $sql_part = '';
+            foreach ($data['related'] as $value){
+                $value = (int)$value;
+                $sql_part .= "($id, $value),";
+            }
+            $sql_part = rtrim($sql_part, ',');
+            R::exec("INSERT INTO related_product (product_id, related_id) VALUES $sql_part");
+            return;
+        }
+        if (!empty($data['related'])) {
+            $result = array_diff($related_product, $data['related']);
+            if (!empty($result) || count($related_product) != $data['related']) {
+                R::exec("DELETE FROM related_product WHERE product_id ?", [$id]);
+                $sql_part = '';
+                foreach ($data['related'] as $value) {
+                    $sql_part .= "($id, $value),";
+                }
+                $sql_part = rtrim($sql_part, ',');
+                R::exec("INSERT INTO related_product (product_id, related_id) VALUES $sql_part");
+            }
+        }
+    }
+
+    public function editFilter($id, $data)
+    {
+        $filter = R::getCol('SELECT attr_id FROM attribute_product WHERE product_id = ?', [$id]);
+        if (empty($data['attrs']) && !empty($filter)){
+            R::exec("DELETE FROM attribute_product WHERE product_id ?",[$id]);
+            return;
+        }
+        if (empty($filter) && !empty($data['attrs'])){
+            $sql_part = '';
+            foreach ($data['attrs'] as $value){
+                $sql_part .= "($value, $id),";
+            }
+            $sql_part = rtrim($sql_part, ',');
+            R::exec("INSERT INTO attribute_product (attr_id, product_id) VALUES $sql_part");
+            return;
+        }
+        if (!empty($data['attrs'])){
+            $result = array_diff($filter, $data['attrs']);
+            if (!$result){
+                R::exec("DELETE FROM attribute_product WHERE product_id ?",[$id]);
+                $sql_part = '';
+                foreach ($data['attrs'] as $value){
+                    $sql_part .= "($value, $id),";
+                }
+                $sql_part = rtrim($sql_part, ',');
+                R::exec("INSERT INTO attribute_product (attr_id, product_id) VALUES $sql_part");
+            }
+        }
+    }
 }

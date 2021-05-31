@@ -71,6 +71,13 @@
                         <div class="form-group">
                             <input type="checkbox" name="hit"> Хит
                         </div>
+
+                        <div class="form-group">
+                            <label for="related">Связанные товары</label>
+                            <select name="related[]" class="form-control select2" id="related" multiple></select>
+                        </div>
+
+                        <?php new \App\widgets\filter\Filter(null,WWW . '/filter/admin_filter_tpl.php');?>
                     </div>
                     <div class="box-footer">
                         <button type="submit" class="btn btn btn-success">Добавить</button>
