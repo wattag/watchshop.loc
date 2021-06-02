@@ -560,6 +560,7 @@
 </script>
 
 <script src="/public/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/public/js/ajaxupload.js"></script>
 
 <script src="/public/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/public/adminlte/bower_components/select2/dist/js/select2.full.js"></script>

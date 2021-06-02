@@ -10,7 +10,8 @@
     "require": {
         "gabordemooij/redbean": "dev-master",
         "ext-json": "*",
-        "vlucas/valitron": "^1.4"
+        "vlucas/valitron": "^1.4",
+      "ext-gd": "*"
     },
     "autoload": {
         "psr-4": {
