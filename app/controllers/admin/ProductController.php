@@ -139,4 +139,13 @@ class ProductController extends AppController
             exit('1');
         }
     }
+
+    public function deleteAction()
+    {
+        $id = $this->getRequestID();
+        $product = R::load('product', $id);
+        R::trash($product);
+        $_SESSION['success'] = 'Товар успешно удален';
+        redirect(ADMIN . '/product');
+    }
 }

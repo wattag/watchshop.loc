@@ -27,7 +27,7 @@
     <?php endforeach;?>
     <div class="clearfix"></div>
     <div class="text-center">
-        <p>(<?=count($products)?> product(s) out of <?=$total;?>)</p>
+        <p>(<?=count($products)?> товара(ов) из <?=$total;?>)</p>
         <?php if ($pagination->countPages > 1):?>
             <?=$pagination;?>
         <?php endif;?>

@@ -99,7 +99,7 @@ $('#cart .modal-body').on('click', '.del-item', function (){
 });
 
 function showCart(cart){
-    if ($.trim(cart) === '<h3>Cart is empty</h3>'){
+    if ($.trim(cart) === '<h3>Корзина пуста</h3>'){
         $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display','none');
     }else {
         $('#cart .modal-footer a, #cart .modal-footer .btn-danger').css('display','inline-block');

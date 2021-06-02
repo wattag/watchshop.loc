@@ -3,7 +3,7 @@
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li class="active"><a href="<?=PATH;?>">Home</a></li>
+                <li class="active"><a href="<?=PATH;?>">Главная</a></li>
                 <li>Cart</li>
             </ol>
         </div>
@@ -24,10 +24,10 @@
                             <table class="table table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Image</th>
-                                        <th>Name</th>
-                                        <th>Quantity</th>
-                                        <th>Price</th>
+                                        <th>изображение</th>
+                                        <th>Наименование</th>
+                                        <th>Количество</th>
+                                        <th>Стоимость</th>
                                         <th><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></th>
                                     </tr>
                                 </thead>
@@ -42,11 +42,11 @@
                                     </tr>
                                 <?php endforeach; ?>
                                 <tr>
-                                    <td>Total:</td>
+                                    <td>Всего:</td>
                                     <td colspan="4" class="text-right cart-qty"><?=$_SESSION['cart.qty'];?></td>
                                 </tr>
                                 <tr>
-                                    <td>For the amount of:</td>
+                                    <td>Общая стоимость:</td>
                                     <td colspan="4" class="text-right cart-sum"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'];?></td>
                                 </tr>
                                 </tbody>
@@ -55,19 +55,19 @@
                             <form method="post" action="cart/checkout" role="form" data-toggle="validator">
                                 <?php if (!isset($_SESSION['user'])):?>
                                     <div class="form-group has-feedback">
-                                        <label for="login">Login</label>
-                                        <input type="text" name="login" class="form-control" id="login" placeholder="Login" value="<?=isset($_SESSION['form_data']['login']) ? h($_SESSION['form_data']['login']):'';?>" required>
+                                        <label for="login">Логин</label>
+                                        <input type="text" name="login" class="form-control" id="login" placeholder="Логин" value="<?=isset($_SESSION['form_data']['login']) ? h($_SESSION['form_data']['login']):'';?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     </div>
                                     <div class="form-group has-feedback">
-                                        <label for="password">Password</label>
-                                        <input type="password" name="password" class="form-control" id="password" placeholder="Password" data-error="Пароль должен содержать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']):'';?>" required>
+                                        <label for="password">Пароль</label>
+                                        <input type="password" name="password" class="form-control" id="password" placeholder="Пароль" data-error="Пароль должен содержать не менее 6 символов" data-minlength="6" value="<?=isset($_SESSION['form_data']['password']) ? h($_SESSION['form_data']['password']):'';?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <div class="form-group has-feedback">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" value="<?=isset($_SESSION['form_data']['name']) ? h($_SESSION['form_data']['name']):'';?>" required>
+                                        <label for="name">Имя</label>
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Имя" value="<?=isset($_SESSION['form_data']['name']) ? h($_SESSION['form_data']['name']):'';?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     </div>
                                     <div class="form-group has-feedback">
@@ -76,21 +76,21 @@
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     </div>
                                     <div class="form-group has-feedback">
-                                        <label for="address">Address</label>
-                                        <input type="text" name="address" class="form-control" id="address" placeholder="Address" value="<?=isset($_SESSION['form_data']['address']) ? h($_SESSION['form_data']['address']):'';?>" required>
+                                        <label for="address">Адрес</label>
+                                        <input type="text" name="address" class="form-control" id="address" placeholder="Адрес" value="<?=isset($_SESSION['form_data']['address']) ? h($_SESSION['form_data']['address']):'';?>" required>
                                         <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     </div>
                                 <?php endif;?>
                                 <div class="form-group">
-                                    <label for="address">Note</label>
+                                    <label for="address">Комментарий к заказу</label>
                                     <textarea name="note" class="form-control"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-default">Place an order</button>
+                                <button type="submit" class="btn btn-default">Оформить заказ</button>
                             </form>
                             <?php if (isset($_SESSION['form_data'])) unset($_SESSION['form_data']);?>
                         </div>
                     <?php else: ?>
-                        <h3>Cart is empty</h3>
+                        <h3>Корзина пока еще пуста..</h3>
                     <?php endif;?>
                 </div>
             </div>

@@ -45,7 +45,7 @@
                         <?php endforeach;?>
                         <div class="clearfix"></div>
                         <div class="text-center">
-                            <p>(<?=count($products)?> product(s) out of <?=$total;?>)</p>
+                            <p>(<?=count($products)?> товара(ов) из <?=$total;?>)</p>
                             <?php if ($pagination->countPages > 1):?>
                                 <?=$pagination;?>
                             <?php endif;?>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 <?php else: ?>
-                    <h3> Sorry :( There are no products in this category</h3>
+                    <h3> Извините :( В этой категории пока еще нет товаров..</h3>
                 <?php endif;?>
             </div>
             <div class="col-md-3 prdt-right">

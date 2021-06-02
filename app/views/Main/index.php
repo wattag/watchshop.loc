@@ -49,6 +49,7 @@
         <div class="container">
             <div class="product-top">
                 <div class="product-one">
+                    <h3>Хит продаж:</h3>
                     <?php foreach($hits  as $hit): ?>
                         <div class="col-md-3 product-left">
                             <div class="product-main simpleCart_shelfItem">

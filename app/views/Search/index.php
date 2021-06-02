@@ -3,8 +3,8 @@
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li class="active"><a href="<?=PATH;?>">Home</a></li>
-                <li>Search</li>
+                <li class="active"><a href="<?=PATH;?>">Главная</a></li>
+                <li>Поиск</li>
                 <li><?=h($query);?></li>
             </ol>
         </div>

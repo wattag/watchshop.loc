@@ -28,14 +28,14 @@
                         </select>
                     </div>
                     <div class="btn-group">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown">Аккаунт<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <?php if (!empty($_SESSION['user'])):?>
-                                <li><a href="#">Welcome, <?=h($_SESSION['user']['name']);?></a></li>
-                                <li><a href="user/logout">Logout</a></li>
+                                <li><a href="#">Здравствуйте, <?=h($_SESSION['user']['name']);?></a></li>
+                                <li><a href="user/logout">Выйти</a></li>
                             <?php else: ?>
-                                <li><a href="user/login">Login</a></li>
-                                <li><a href="user/signup">Sign up</a></li>
+                                <li><a href="user/login">Войти</a></li>
+                                <li><a href="user/signup">Зарегистрироваться</a></li>
                             <?php endif;?>
                         </ul>
                     </div>
@@ -51,7 +51,7 @@
                             <?php if (!empty($_SESSION['cart'])):?>
                                 <span class="simpleCart_total"><?=$_SESSION['cart.currency']['symbol_left'] . $_SESSION['cart.sum'];?></span>
                             <?php else: ?>
-                                <span class="simpleCart_total">Empty Cart</span>
+                                <span class="simpleCart_total">Корзина пуста</span>
                             <?php endif;?>
                         </div>
                     </a>
@@ -122,38 +122,10 @@
     <div class="container">
         <div class="infor-top">
             <div class="col-md-3 infor-left">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#"><span class="fb"></span><h6>Facebook</h6></a></li>
-                    <li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
-                    <li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 infor-left">
-                <h3>Information</h3>
-                <ul>
-                    <li><a href="#"><p>Specials</p></a></li>
-                    <li><a href="#"><p>New Products</p></a></li>
-                    <li><a href="#"><p>Our Stores</p></a></li>
-                    <li><a href="contact.html"><p>Contact Us</p></a></li>
-                    <li><a href="#"><p>Top Sellers</p></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 infor-left">
-                <h3>My Account</h3>
-                <ul>
-                    <li><a href="account.html"><p>My Account</p></a></li>
-                    <li><a href="#"><p>My Credit slips</p></a></li>
-                    <li><a href="#"><p>My Merchandise returns</p></a></li>
-                    <li><a href="#"><p>My Personal info</p></a></li>
-                    <li><a href="#"><p>My Addresses</p></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 infor-left">
-                <h3>Store Information</h3>
-                <h4></h4>
-                <h5></h5>
-                <p><a href="mailto:example@email.com">litvinov374@gmail.com</a></p>
+                <h3>Общая информация</h3>
+                <h5>Контактный номер : +79033373470</h5>
+                <h5><a href="mailto:litvinov374@gmail.com">Почта: litvinov374@gmail.com</a></h5>
+                <h5><a href="https://vk.com/wattag">По личным вопросам: Литвинов Илья Васильевич</a></h5>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -164,13 +136,7 @@
 <div class="footer">
     <div class="container">
         <div class="footer-top">
-            <div class="col-md-6 footer-left">
-                <form>
-                    <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
-                    <input type="submit" value="Subscribe">
-                </form>
-            </div>
-            <div class="col-md-6 footer-right">
+            <div class="col-md-12 footer-right">
                 <p>© 2021 Luxury Watches. All Rights Reserved | Design by  <a href="https://vk.com/wattag" target="_blank">Litvinov Ilya</a> </p>
             </div>
             <div class="clearfix"></div>
@@ -186,15 +152,15 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Cart</h4>
+                <h4 class="modal-title" id="myModalLabel">Корзина</h4>
             </div>
             <div class="modal-body">
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Continue shopping</button>
-                <a href="cart/view" type="button" class="btn btn-primary">Place order</a>
-                <button type="button" class="btn btn-danger" onclick="clearCart()">Empty cart</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупку</button>
+                <a href="cart/view" type="button" class="btn btn-primary">Оформить заказ</a>
+                <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>
             </div>
         </div>
     </div>
@@ -282,11 +248,5 @@
 
     });
 </script>
-<?php
-$logs = \RedBeanPHP\R::getDatabaseAdapter()
-        ->getDatabase()
-        ->getLogger();
-debug($logs->grep('SELECT'));
-?>
 </body>
 </html>

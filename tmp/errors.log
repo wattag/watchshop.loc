@@ -1042,3 +1042,25 @@
 ==========================
 [2021-06-02 14:02:57] Текст ошибки: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=' at line 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
 ==========================
+[2021-06-02 14:44:20] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 14:44:22] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 14:44:33] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 14:59:57] Текст ошибки: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect double value: '' for column `watchshop`.`product`.`old_price` at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-02 15:00:35] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-06-02 15:00:51] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-06-02 15:01:11] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-06-02 15:01:24] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 15:01:38] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 15:01:56] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================
+[2021-06-02 15:02:05] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
+==========================

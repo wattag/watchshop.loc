@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <base href="/">
-    <title>AdminLTE 2 | Log in</title>
+    <title>Авторизация</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/public/adminlte/dist/css/AdminLTE.min.css">
     <!-- iCheck -->
     <link rel="stylesheet" href="/public/adminlte/plugins/iCheck/square/blue.css">
+    <link rel="shortcut icon" href="images/main_icon.png" type="image/png"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
