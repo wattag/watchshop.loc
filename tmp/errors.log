@@ -1064,3 +1064,7 @@
 ==========================
 [2021-06-02 15:02:05] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
 ==========================
+[2021-06-06 11:02:14] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'symbol_right' in 'field list' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-06 11:02:14] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================

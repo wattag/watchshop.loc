@@ -109,7 +109,7 @@ function showCart(cart){
     if ($('.cart-sum').text()){
         $('.simpleCart_total').html($('#cart .cart-sum').text());
     }else {
-        $('.simpleCart_total').text('Empty cart');
+        $('.simpleCart_total').text('Корзина пуста');
     }
 }
 

@@ -4,7 +4,7 @@
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
                 <li class="active"><a href="<?=PATH;?>">Главная</a></li>
-                <li>Cart</li>
+                <li>Корзина</li>
             </ol>
         </div>
     </div>

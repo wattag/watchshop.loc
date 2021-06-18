@@ -4,7 +4,7 @@
 return [
     'admin_email' => 'litvinov@gmail.com',
     'shop_name' => 'WatchShop',
-    'pagination' => 3,
+    'pagination' => 9,
     'smtp_host' => 'smtp.mail.ru',
     'smtp_port' => '465',
     'smtp_protocol' => 'ssl',
