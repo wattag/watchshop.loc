@@ -48,6 +48,32 @@ class CartController extends AppController
             redirect();
         }
     }
+
+    public function plusAction()
+    {
+        $id  = !empty($_GET['id']) ? $_GET['id'] : null;
+        if (isset($_SESSION['cart'][$id])){
+            $cart = new Cart();
+            $cart->plusItem($id);
+            if ($this->isAjax()){
+                $this->loadView('cart_modal');
+            }
+            redirect();
+        }
+    }
+    public function minusAction()
+    {
+        $id  = !empty($_GET['id']) ? $_GET['id'] : null;
+        if (isset($_SESSION['cart'][$id])){
+            $cart = new Cart();
+            $cart->minusItem($id);
+            if ($this->isAjax()){
+                $this->loadView('cart_modal');
+            }
+            redirect();
+        }
+    }
+
     public function clearAction(){
         unset($_SESSION['cart']);
         unset($_SESSION['cart.qty']);

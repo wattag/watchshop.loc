@@ -3071,6 +3071,12 @@ ul.tag-men {
 .del-item{
 	cursor: pointer;
 }
+.plus_item{
+	cursor: pointer;
+}
+.minus_item{
+	cursor: pointer;
+}
 #cart table img{
 	height: 50px;
 }

@@ -97,6 +97,35 @@ $('#cart .modal-body').on('click', '.del-item', function (){
        }
    });
 });
+$('#cart .modal-body').on('click', '.plus_item', function (){
+   var id = $(this).data('id');
+    $.ajax({
+       url: '/cart/plus',
+        data: {id: id},
+        type: 'GET',
+        success: function (res){
+            showCart(res)
+        },
+        error: function (){
+            alert('Ошибка! Что-то пошло не так')
+        }
+    });
+});
+
+$('#cart .modal-body').on('click', '.minus_item', function (){
+    var id = $(this).data('id');
+    $.ajax({
+        url: '/cart/minus',
+        data: {id: id},
+        type: 'GET',
+        success: function (res){
+            showCart(res)
+        },
+        error: function (){
+            alert('Ошибка! Что-то пошло не так')
+        }
+    });
+});
 
 function showCart(cart){
     if ($.trim(cart) === '<h3>Корзина пуста</h3>'){

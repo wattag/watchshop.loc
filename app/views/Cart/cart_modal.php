@@ -17,9 +17,9 @@
                 <tr>
                     <td><a href="product/<?=$item['alias'];?>"><img src="images/<?=$item['img'];?>" alt=""></a></td>
                     <td><a href="product/<?=$item['alias'];?>"><?=$item['title'];?></a></td>
-                    <td><span class="glyphicon glyphicon-minus text-black" aria-hidden="true"></td>
+                    <td><span data-id="<?=$id;?>" class="glyphicon glyphicon-minus text-black minus_item" aria-hidden="true"></td>
                     <td style="text-align: center"><?=$item['qty'];?></td>
-                    <td><span class="glyphicon glyphicon-plus text-black" aria-hidden="true"></td>
+                    <td><span data-id="<?=$id;?>" class="glyphicon glyphicon-plus text-black plus_item" aria-hidden="true"></td>
                     <td style="text-align: center"><?= $_SESSION['cart.currency']['symbol_left'] . $item['price'];?></td>
                     <td><span data-id="<?=$id;?>" class="glyphicon glyphicon-remove text-danger del-item" aria-hidden="true"></td>
                 </tr>

@@ -24,7 +24,7 @@
                             <table class="table table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th>изображение</th>
+                                        <th>Изображение</th>
                                         <th>Наименование</th>
                                         <th>Количество</th>
                                         <th>Стоимость</th>
