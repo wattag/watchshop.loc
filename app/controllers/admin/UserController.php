@@ -11,7 +11,7 @@ class UserController extends AppController
 {
     public function indexAction(){
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $perpage = 3;
+        $perpage = 5;
         $count = R::count('user');
         $pagination = new Pagination($page, $perpage, $count);
         $start = $pagination->getStart();

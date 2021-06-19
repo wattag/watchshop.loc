@@ -29,7 +29,7 @@ class ProductController extends AppController
     public function indexAction()
     {
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $perpage = 3;
+        $perpage = 5;
         $count = R::count('product');
         $pagination = new Pagination($page, $perpage, $count);
         $start = $pagination->getStart();
@@ -57,13 +57,13 @@ class ProductController extends AppController
                 redirect();
             }
             if ($product->update('product', $id)){
-                $product->editFilter($id, $data);
-                $product->editRelatedProduct($id, $data);
                 $product->getGallery($id);
                 $alias = AppModel::createAlias('product','alias', $data['title'], $id);
                 $product = R::load('product', $id);
-                $product->alias($alias);
+                $product->alias = $alias;
                 R::store($product);
+                $product->editFilter($id, $data);
+                $product->editRelatedProduct($id, $data);
                 $_SESSION['success'] = 'Товар успешно изменен';
                 redirect();
             }

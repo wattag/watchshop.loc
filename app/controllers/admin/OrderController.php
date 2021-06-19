@@ -10,7 +10,7 @@ class OrderController extends AppController
     public function indexAction()
     {
         $page = isset($_GET['page']) ? (int)$_GET['page']: 1;
-        $perpage = 1;
+        $perpage = 5;
         $count = R::count('order');
         $pagination = new Pagination($page, $perpage, $count);
         $start = $pagination->getStart();
