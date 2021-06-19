@@ -57,7 +57,7 @@ class CartController extends AppController
     }
     public function viewAction()
     {
-        $this->setMeta('Cart');
+        $this->setMeta('Корзина');
     }
 
     public function checkoutAction()

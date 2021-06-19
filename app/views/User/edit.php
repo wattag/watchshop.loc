@@ -2,9 +2,9 @@
     <div class="container">
         <div class="breadcrumbs-main">
             <ol class="breadcrumb">
-                <li class="active"><a href="<?=PATH;?>">Главная</a></li>
-                <li class="active"><a href="<?=PATH;?>/user/cabinet">Личный кабинет</a></li>
-                <li>Редактирование данных</li>
+                <li><a href="<?=PATH;?>">Главная</a></li>
+                <li><a href="<?=PATH;?>/user/cabinet">Личный кабинет</a></li>
+                <li class="active">Редактирование данных</li>
             </ol>
         </div>
     </div>
