@@ -21,7 +21,7 @@
                         <h2>Вход в систему</h2>
                     </div>
                     <div class="register-main">
-                        <div class="col-md-6 account-left">
+                        <div class="col-md-12">
                             <form method="post" action="user/login" id="login" role="form" data-toggle="validator">
                                 <div class="form-group has-feedback">
                                     <label for="login">Логин</label>

@@ -31,7 +31,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown">Аккаунт<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <?php if (!empty($_SESSION['user'])):?>
-                                <li><a href="#">Здравствуйте, <?=h($_SESSION['user']['name']);?></a></li>
+                                <li><a href="user/cabinet">Личный кабинет</a></li>
                                 <li><a href="user/logout">Выйти</a></li>
                             <?php else: ?>
                                 <li><a href="user/login">Войти</a></li>

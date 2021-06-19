@@ -11,6 +11,24 @@
             <li>
                 <img src="images/bnr-3.jpg" alt=""/>
             </li>
+            <li>
+                <img src="images/bnr-4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/bnr-5.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/bnr-10.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/bnr-7.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/bnr-8.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/bnr-9.jpg" alt="">
+            </li>
         </ul>
     </div>
     <div class="clearfix"> </div>

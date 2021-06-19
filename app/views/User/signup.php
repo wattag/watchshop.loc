@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="register-main">
-                    <div class="col-md-6 account-left">
+                    <div class="col-md-12 account-left">
                         <form method="post" action="user/signup" id="signup" role="form" data-toggle="validator">
                             <div class="form-group has-feedback">
                                 <label for="login">Логин</label>
