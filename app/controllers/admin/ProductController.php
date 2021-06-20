@@ -49,21 +49,21 @@ class ProductController extends AppController
             $product = new Product();
             $data = $_POST;
             $product->load($data);
-            $product->attributes['status'] = $product->attributes['status'] ? '1' : '0';
-            $product->attributes['hit'] = $product->attributes['hit'] ? '1' : '0';
+            $product->attributes['status'] = $product->attributes['status'] ? true : false;
+            $product->attributes['hit'] = $product->attributes['hit'] ? true : false;
             $product->getIMG();
             if (!$product->validate($data)){
                 $product->getErrors();
                 redirect();
             }
+            $product->editFilter($id, $data);
+            $product->editRelatedProduct($id, $data);
             if ($product->update('product', $id)){
                 $product->getGallery($id);
                 $alias = AppModel::createAlias('product','alias', $data['title'], $id);
                 $product = R::load('product', $id);
                 $product->alias = $alias;
                 R::store($product);
-                $product->editFilter($id, $data);
-                $product->editRelatedProduct($id, $data);
                 $_SESSION['success'] = 'Товар успешно изменен';
                 redirect();
             }
@@ -86,8 +86,8 @@ class ProductController extends AppController
             $product = new Product();
             $data = $_POST;
             $product -> load($data);
-            $product->attributes['status'] = $product->attributes['status'] ? '1' : '0';
-            $product->attributes['hit'] = $product->attributes['hit'] ? '1' : '0';
+            $product->attributes['status'] = $product->attributes['status'] ? true : false;
+            $product->attributes['hit'] = $product->attributes['hit'] ? true : false;
             $product->getIMG();
 
             if (!$product->validate($data)){

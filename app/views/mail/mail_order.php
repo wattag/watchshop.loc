@@ -8,7 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
+<h1>Ваш заказ ждет оплаты!</h1>
+<h4>Заказанный товар ожидает Вас в магазине Luxury Watches на проспекте Созидателей по адресу: Созидателей, пр-кт, дом 54, Телефон +7 9033373470, (Whats App, Viber, Te.</h4>
 
+<h3><strong>Убедительная просьба обеспечить себя маской и перчатками при посещении магазина или пункта выдачи заказов. Это важно для вашей безопасности и для безопасности наших сотрудников!</strong></h3>
+
+<h3><strong>Желаем здоровья вам и вашим близким!</strong></h3>
+
+<h2><strong>Состав заказа</strong></h2>
 <table style="border: 1px solid #ddd; border-collapse: collapse; width: 100%;">
     <thead>
     <tr style="background: #f9f9f9">

@@ -1078,3 +1078,29 @@
 ==========================
 [2021-06-19 12:43:59] Текст ошибки: Метод App\controllers\ProductController::indexAction не найден | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 39 
 ==========================
+[2021-06-19 17:45:38] Текст ошибки: Call to undefined method App\controllers\admin\ReportController::setMeta() | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\admin\ReportController.php | Строка: 11 
+==========================
+[2021-06-19 19:09:16] Текст ошибки: Class 'PhpOffice\PhpWord\PhpWord' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\admin\ReportController.php | Строка: 15 
+==========================
+[2021-06-19 19:10:39] Текст ошибки: Class 'PhpOffice\PhpWord\PhpWord' not found | Файл: D:\programs\OpenServer\domains\watchshop.loc\app\controllers\admin\ReportController.php | Строка: 16 
+==========================
+[2021-06-19 19:32:46] Текст ошибки: Не найден вид D:\programs\OpenServer\domains\watchshop.loc/app/views/admin\Report/do.php | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\base\View.php | Строка: 43 
+==========================
+[2021-06-19 20:51:49] Текст ошибки: Страница не найдена | Файл: D:\programs\OpenServer\domains\watchshop.loc\core\Router.php | Строка: 46 
+==========================
+[2021-06-19 21:00:22] Текст ошибки: OODB Store requires a bean, got: integer | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\OODB.php | Строка: 119 
+==========================
+[2021-06-19 21:28:05] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'hit' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-19 21:28:14] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-19 21:28:43] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-19 21:29:02] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-19 21:29:10] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-19 21:30:03] Текст ошибки: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'status' at row 1 | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================
+[2021-06-20 07:15:13] Текст ошибки: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'hit' in 'where clause' | Файл: D:\programs\OpenServer\domains\watchshop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 202 
+==========================

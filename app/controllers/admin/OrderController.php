@@ -40,7 +40,7 @@ class OrderController extends AppController
     public function changeAction()
     {
         $order_id = $this->getRequestID();
-        $status = !empty($_GET['status']) ? '1' : '0';
+        $status = !empty($_GET['status']);
         $order = R::load('order', $order_id);
         if (!$order){
             throw new \Exception('Страница не найдена', 404);

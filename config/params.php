@@ -2,7 +2,7 @@
 
 
 return [
-    'admin_email' => 'litvinov@gmail.com',
+    'admin_email' => 'litvinov374@gmail.com',
     'shop_name' => 'WatchShop',
     'pagination' => 9,
     'smtp_host' => 'smtp.mail.ru',

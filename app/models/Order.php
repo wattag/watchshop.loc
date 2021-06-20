@@ -4,6 +4,10 @@ namespace App\models;
 
 use Core\App;
 use RedBeanPHP\R;
+use Swift_Mailer;
+use Swift_Message;
+use Swift_SmtpTransport;
+
 class Order extends AppModel
 {
     public static function saveOrder($data)
@@ -31,7 +35,7 @@ class Order extends AppModel
 
     public static function mailOrder($order_id, $user_email)
     {
-        /*$transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'),App::$app->getProperty('smtp_port'),App::$app->getProperty('smtp_protocol')))
+        $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'),App::$app->getProperty('smtp_port'),App::$app->getProperty('smtp_protocol')))
         ->setUsername(App::$app->getProperty('smtp_login'))
         ->setPassword(App::$app->getProperty('smtp_password'))
         ;
@@ -39,22 +43,26 @@ class Order extends AppModel
 
         ob_start();
         require  APP . '/views/mail/mail_order.php';
-        $body = ob_get_clean();
+        $clientBody = ob_get_clean();
+
+        ob_start();
+        require  APP . '/views/mail/mail_admin_order.php';
+        $adminBody = ob_get_clean();
 
         $clientMessage = (new Swift_Message("Заказ №{$order_id} принят"))
             ->setFrom([App::$app->getProperty('smtp_login') => 'Luxury Watches Shop'])
             ->setTo($user_email)
-            ->setBody($body, 'text/html')
+            ->setBody($clientBody, 'text/html')
             ;
 
         $adminMessage = (new Swift_Message("Заказ №{$order_id} составлен"))
             ->setFrom([App::$app->getProperty('smtp_login') => 'Luxury Watches Shop'])
             ->setTo(App::$app->getProperty('admin_email'))
-            ->setBody($body, 'text/html')
+            ->setBody($adminBody, 'text/html')
         ;
 
         $adminResult = $mailer->send($adminMessage);
-        $clientResult = $mailer-> send($clientMessage);*/
+        $clientResult = $mailer-> send($clientMessage);
 
         unset($_SESSION['cart']);
         unset($_SESSION['cart.currency']);
